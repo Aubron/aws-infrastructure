@@ -11,15 +11,10 @@ export class DatabaseStack extends cdk.Stack {
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    
-
     const stackAlarmTopic = new SNS.Topic(this,'StackAlarmTopic',{
       displayName: "Stack Alarm Topic"
     })
     
-
-    
-
     const VPC = new EC2.CfnVPC(this, 'VPC', {
       cidrBlock: "10.192.0.0/16",
       enableDnsHostnames: true,
