@@ -1,21 +1,9 @@
 import SNS = require('@aws-cdk/aws-sns');
 import EC2 = require('@aws-cdk/aws-ec2');
 import RDS = require('@aws-cdk/aws-rds');
-import ECS = require('@aws-cdk/aws-ecs');
-import ELB2 = require('@aws-cdk/aws-elasticloadbalancingv2');
-import Logs = require('@aws-cdk/aws-logs');
-import IAM = require('@aws-cdk/aws-iam');
 import cdk = require('@aws-cdk/core');
 import CloudWatch = require('@aws-cdk/aws-cloudwatch');
-import { Ec2Service } from '@aws-cdk/aws-ecs';
-import { Vpc } from '@aws-cdk/aws-ec2';
-import { join } from 'path';
-
-const DATABASE_NAME = "prisma-db"
-const PRISMA_VERSION = "1.34.0"
-const FARGATE_CPU = "1024"
-const FARGATE_MEMORY  = "2048"
-const JVM_OPTS = "-Xmx1350m"
+import { DATABASE_NAME } from '../config';
 
 
 export class DatabaseStack extends cdk.Stack {

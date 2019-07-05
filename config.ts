@@ -1,0 +1,5 @@
+export const DATABASE_NAME: string = "prisma-db"
+export const PRISMA_VERSION: string = "1.34.0"
+export const FARGATE_CPU: string = "1024"
+export const FARGATE_MEMORY: string = "2048"
+export const JVM_OPTS: string = "-Xmx1350m"
