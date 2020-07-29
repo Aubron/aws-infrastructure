@@ -1,7 +1,2 @@
-# Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+# (legacy) AWS Infrastructure
+This repo contains legacy infrastructure using the AWS CDK to deploy an (outdated) prisma instance to Cloudformation - It is legacy and no longer in use
